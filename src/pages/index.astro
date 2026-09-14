@@ -32,6 +32,7 @@ import Layout from "../layouts/Layout.astro";
     <div class="card"><h3>Device Provisioning</h3><p>AWS Fleet Provisioning and claim certificates, Azure DPS with X.509 or symmetric keys, and The Things Stack LoRaWAN OTAA onboarding.</p><span class="tag">Identity</span><span class="tag">Certificates</span><span class="tag">OTAA</span></div>
     <div class="card"><h3>Edge &amp; Embedded</h3><p>ESP32, Raspberry Pi, Arduino, BeagleBone and Linux-based edge systems.</p><span class="tag">ESP32</span><span class="tag">Linux</span><span class="tag">Edge</span></div>
     <div class="card"><h3>Industrial IoT</h3><p>PLC and OPC UA data acquisition with Ignition, Modbus, Mosquitto, Kafka, gateways, telemetry pipelines and device integration.</p><span class="tag">Ignition</span><span class="tag">OPC UA</span><span class="tag">IIoT</span></div>
+    <div class="card"><h3>Data Science &amp; Analytics</h3><p>Telemetry feature engineering, anomaly detection and predictive models with AWS and Azure data and ML services.</p><span class="tag">Python</span><span class="tag">ML</span><span class="tag">Analytics</span></div>
   </div>
 </div></section>
 
@@ -53,6 +54,7 @@ import Layout from "../layouts/Layout.astro";
     <div class="card"><h3>ESP32 IoT Gateway</h3><p>Embedded gateway experiments connecting sensors and field devices to modern IoT backends.</p><span class="tag">Embedded</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
     <div class="card"><h3>Industrial Edge</h3><p>Edge-first architectures using Linux, Python and Node-RED for protocol integration and local processing.</p><span class="tag">IIoT</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
     <div class="card"><h3>Ignition Industrial Data Platform</h3><p>Reads PLC data through OPC UA into Ignition, sends telemetry to the cloud, stores time-series data, applies machine learning and presents operational dashboards.</p><span class="tag">PLC / OPC UA</span><span class="tag">Machine learning</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
+    <div class="card"><h3>IoT Data Science Platform</h3><p>Processes device telemetry with AWS IoT, Kinesis, S3, Glue, Timestream and SageMaker, alongside Azure IoT Hub, Event Hubs, Data Lake and Azure Machine Learning.</p><span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">Data science</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
   </div>
 </div></section>
 
@@ -73,6 +75,11 @@ import Layout from "../layouts/Layout.astro";
     <div class="node">PLC / OPC UA<br/>Industrial data</div><div class="arrow">→</div>
     <div class="node">Ignition<br/>SCADA / tags</div><div class="arrow">→</div>
     <div class="node">Cloud / database<br/>ML / dashboard</div>
+  </div>
+  <div class="arch">
+    <div class="node">Telemetry<br/>AWS IoT / Azure IoT</div><div class="arrow">→</div>
+    <div class="node">Data platform<br/>Kinesis / Event Hubs / S3 / Data Lake</div><div class="arrow">→</div>
+    <div class="node">ML &amp; dashboard<br/>SageMaker / Azure ML / BI</div>
   </div>
   <div class="arch">
     <div class="node">AWS IoT<br/>Fleet / JITP / JITR</div><div class="arrow">→</div>
