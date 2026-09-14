@@ -1,0 +1,72 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+<Layout>
+<main>
+<section class="hero"><div class="container">
+  <div class="eyebrow">IoT R&amp;D Engineer · Cloud · Edge · Embedded</div>
+  <h1>VENKATESH<br/>BOKKA</h1>
+  <p>I build connected systems from device to edge to cloud — with a focus on AWS IoT, Azure IoT, industrial connectivity, Python and embedded platforms.</p>
+  <div class="buttons">
+    <a class="btn primary" href="#projects">Explore projects</a>
+    <a class="btn" href="https://github.com/venkateshbokka" target="_blank">GitHub ↗</a>
+    <a class="btn" href="https://www.linkedin.com/in/venkatesh-bokka-983b99126/" target="_blank">LinkedIn ↗</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><strong>8+</strong><span>Years engineering</span></div>
+    <div class="stat"><strong>AWS</strong><span>IoT &amp; cloud</span></div>
+    <div class="stat"><strong>Edge</strong><span>Embedded systems</span></div>
+    <div class="stat"><strong>IIoT</strong><span>Industrial connectivity</span></div>
+  </div>
+</div></section>
+
+<section id="about"><div class="container">
+  <div class="eyebrow">01 / About</div><h2>Engineering systems that connect.</h2>
+  <p class="lead">I work across the full IoT stack: device firmware and gateways, protocols and edge applications, cloud ingestion, APIs, storage and analytics. My goal is to turn device data into reliable, scalable systems.</p>
+</div></section>
+
+<section id="skills"><div class="container">
+  <div class="eyebrow">02 / Technical focus</div><h2>Tools I build with.</h2>
+  <div class="grid">
+    <div class="card"><h3>Cloud &amp; IoT</h3><p>AWS IoT Core, Azure IoT, Lambda, API Gateway, S3, DynamoDB, Timestream, MQTT and REST APIs.</p><span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">MQTT</span></div>
+    <div class="card"><h3>Edge &amp; Embedded</h3><p>ESP32, Raspberry Pi, Arduino, BeagleBone and Linux-based edge systems.</p><span class="tag">ESP32</span><span class="tag">Linux</span><span class="tag">Edge</span></div>
+    <div class="card"><h3>Industrial IoT</h3><p>Node-RED, Modbus, OPC UA concepts, gateways, telemetry pipelines and device integration.</p><span class="tag">Node-RED</span><span class="tag">Modbus</span><span class="tag">IIoT</span></div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="container">
+  <div class="eyebrow">03 / Selected work</div><h2>Projects &amp; labs.</h2>
+  <div class="grid">
+    <div class="card"><h3>AWS IoT Platform</h3><p>Device connectivity, MQTT telemetry, Thing Registry, policies, provisioning and cloud data pipelines.</p></div>
+    <div class="card"><h3>ESP32 IoT Gateway</h3><p>Embedded gateway experiments connecting sensors and field devices to modern IoT backends.</p></div>
+    <div class="card"><h3>Industrial Edge</h3><p>Edge-first architectures using Linux, Python and Node-RED for protocol integration and local processing.</p></div>
+  </div>
+</div></section>
+
+<section id="architecture"><div class="container">
+  <div class="eyebrow">04 / Architecture</div><h2>Device → Edge → Cloud → Data</h2>
+  <p class="lead">A representative architecture for scalable telemetry systems.</p>
+  <div class="arch">
+    <div class="node">Sensors<br/>ESP32 / PLC</div><div class="arrow">→</div>
+    <div class="node">Edge<br/>Python / Node-RED</div><div class="arrow">→</div>
+    <div class="node">AWS IoT Core<br/>MQTT</div>
+  </div>
+  <div class="arch">
+    <div class="node">Rules / Lambda</div><div class="arrow">→</div>
+    <div class="node">S3 / DynamoDB<br/>Timestream</div><div class="arrow">→</div>
+    <div class="node">Analytics / APIs</div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="container">
+  <div class="eyebrow">05 / Contact</div><h2>Let's build something connected.</h2>
+  <p class="lead">For IoT engineering, cloud, edge or industrial connectivity opportunities, reach out through GitHub or LinkedIn.</p>
+  <div class="buttons">
+    <a class="btn primary" href="mailto:venkateshbokka232@gmail.com">Email me</a>
+    <a class="btn" href="https://github.com/venkateshbokka" target="_blank">GitHub ↗</a>
+    <a class="btn" href="https://www.linkedin.com/in/venkatesh-bokka-983b99126/" target="_blank">LinkedIn ↗</a>
+  </div>
+</div></section>
+</main>
+<footer><div class="container"><span>© {new Date().getFullYear()} Venkatesh Bokka</span><span>Built for IoT engineering.</span></div></footer>
+</Layout>
