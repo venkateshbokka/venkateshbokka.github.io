@@ -2,229 +2,71 @@
 import Layout from "../layouts/Layout.astro";
 ---
 <Layout>
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow">BLENDER • IOT • EDGE • CLOUD</div>
-          <h1>Sensor to<br />Blender</h1>
-          <p>
-            Industrial telemetry transformed into a living 3D plant view — connecting
-            sensors, edge devices, cloud systems, and a digital twin of the process.
-          </p>
-          <div class="buttons">
-            <a class="btn primary" href="#projects">Explore projects</a>
-            <a class="btn" href="/Venkatesh-Bokka-Resume.pdf" target="_blank" rel="noreferrer">Download resume</a>
-            <a class="btn" href="https://github.com/venkateshbokka" target="_blank">GitHub ↗</a>
-            <a class="btn" href="https://www.linkedin.com/in/venkatesh-bokka-983b99126/" target="_blank">LinkedIn ↗</a>
-          </div>
-          <div class="stats">
-            <div class="stat"><strong>8+</strong><span>Years engineering</span></div>
-            <div class="stat"><strong>AWS</strong><span>Cloud & IoT</span></div>
-            <div class="stat"><strong>Edge</strong><span>Embedded systems</span></div>
-            <div class="stat"><strong>3D</strong><span>Digital twin</span></div>
-          </div>
-        </div>
+<main>
+<section class="hero"><div class="container">
+  <div class="eyebrow">IoT R&amp;D Engineer · Cloud · Edge · Embedded</div>
+  <h1>VENKATESH<br/>BOKKA</h1>
+  <p>I build connected systems from device to edge to cloud — with a focus on AWS IoT, Azure IoT, industrial connectivity, Python and embedded platforms.</p>
+  <div class="buttons">
+    <a class="btn primary" href="#projects">Explore projects</a>
+    <a class="btn" href="https://github.com/venkateshbokka" target="_blank">GitHub ↗</a>
+    <a class="btn" href="https://www.linkedin.com/in/venkatesh-bokka-983b99126/" target="_blank">LinkedIn ↗</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><strong>8+</strong><span>Years engineering</span></div>
+    <div class="stat"><strong>AWS</strong><span>IoT &amp; cloud</span></div>
+    <div class="stat"><strong>Edge</strong><span>Embedded systems</span></div>
+    <div class="stat"><strong>IIoT</strong><span>Industrial connectivity</span></div>
+  </div>
+</div></section>
 
-        <div class="hero-visual" aria-label="Digital twin concept">
-          <div class="panel panel-main">
-            <div class="signal signal-live"></div>
-            <div class="scene-title">Plant Overview</div>
-            <div class="scene">
-              <div class="tank tank-a"></div>
-              <div class="tank tank-b"></div>
-              <div class="pipe pipe-1"></div>
-              <div class="pipe pipe-2"></div>
-              <div class="pump"></div>
-              <div class="valve"></div>
-            </div>
-            <div class="readout-row">
-              <span>Tank 01</span>
-              <strong>72%</strong>
-            </div>
-            <div class="readout-row muted">
-              <span>Pump 01</span>
-              <strong>Running</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<section id="about"><div class="container">
+  <div class="eyebrow">01 / About</div><h2>Engineering systems that connect.</h2>
+  <p class="lead">I work across the full IoT stack: device firmware and gateways, protocols and edge applications, cloud ingestion, APIs, storage and analytics. My goal is to turn device data into reliable, scalable systems.</p>
+</div></section>
 
-    <section class="mockup-section">
-      <div class="container mockup-wrap">
-        <div class="mockup-copy">
-          <div class="eyebrow">Live plant view</div>
-          <h2>Digital twin context, not just telemetry.</h2>
-          <p class="lead">
-            Each asset is mapped to a live process state so the operator can understand
-            equipment condition, level, flow, and service health in a single visual frame.
-          </p>
-        </div>
+<section id="skills"><div class="container">
+  <div class="eyebrow">02 / Technical focus</div><h2>Tools I build with.</h2>
+  <div class="grid">
+    <div class="card"><h3>Cloud &amp; IoT</h3><p>AWS IoT Core, Azure IoT, Lambda, API Gateway, S3, DynamoDB, Timestream, MQTT and REST APIs.</p><span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">MQTT</span></div>
+    <div class="card"><h3>Edge &amp; Embedded</h3><p>ESP32, Raspberry Pi, Arduino, BeagleBone and Linux-based edge systems.</p><span class="tag">ESP32</span><span class="tag">Linux</span><span class="tag">Edge</span></div>
+    <div class="card"><h3>Industrial IoT</h3><p>Node-RED, Modbus, OPC UA concepts, gateways, telemetry pipelines and device integration.</p><span class="tag">Node-RED</span><span class="tag">Modbus</span><span class="tag">IIoT</span></div>
+  </div>
+</div></section>
 
-        <div class="mockup-panel">
-          <div class="mockup-header">
-            <span>Plant / Operations</span>
-            <span class="status-pill">LIVE</span>
-          </div>
-          <div class="mockup-scene">
-            <div class="mini-tank"></div>
-            <div class="mini-pipe"></div>
-            <div class="mini-pump"></div>
-            <div class="mini-valve"></div>
-          </div>
-          <div class="mini-stats">
-            <div><label>Tank 01</label><strong>72%</strong></div>
-            <div><label>Pump 01</label><strong>Running</strong></div>
-            <div><label>Last sync</label><strong>12s ago</strong></div>
-          </div>
-        </div>
-      </div>
-    </section>
+<section id="projects"><div class="container">
+  <div class="eyebrow">03 / Selected work</div><h2>Projects &amp; labs.</h2>
+  <div class="grid">
+    <div class="card"><h3>AWS IoT Platform</h3><p>Device connectivity, MQTT telemetry, Thing Registry, policies, provisioning and cloud data pipelines.</p></div>
+    <div class="card"><h3>ESP32 IoT Gateway</h3><p>Embedded gateway experiments connecting sensors and field devices to modern IoT backends.</p></div>
+    <div class="card"><h3>Industrial Edge</h3><p>Edge-first architectures using Linux, Python and Node-RED for protocol integration and local processing.</p></div>
+  </div>
+</div></section>
 
-    <section id="about">
-      <div class="container">
-        <div class="eyebrow">01 / About</div>
-        <h2>Engineering systems that connect the field to the model.</h2>
-        <p class="lead">
-          I work across the full IoT stack: device telemetry, edge data acquisition,
-          MQTT and cloud transport, asset modeling, and live digital twin visualization.
-          The goal is to turn process data into a clear, operational view of the plant.
-        </p>
-      </div>
-    </section>
+<section id="architecture"><div class="container">
+  <div class="eyebrow">04 / Architecture</div><h2>Device → Edge → Cloud → Data</h2>
+  <p class="lead">A representative architecture for scalable telemetry systems.</p>
+  <div class="arch">
+    <div class="node">Sensors<br/>ESP32 / PLC</div><div class="arrow">→</div>
+    <div class="node">Edge<br/>Python / Node-RED</div><div class="arrow">→</div>
+    <div class="node">AWS IoT Core<br/>MQTT</div>
+  </div>
+  <div class="arch">
+    <div class="node">Rules / Lambda</div><div class="arrow">→</div>
+    <div class="node">S3 / DynamoDB<br/>Timestream</div><div class="arrow">→</div>
+    <div class="node">Analytics / APIs</div>
+  </div>
+</div></section>
 
-    <section id="skills">
-      <div class="container">
-        <div class="eyebrow">02 / Technical focus</div>
-        <h2>From raw signal to visual insight.</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>Cloud & IoT</h3>
-            <p>AWS IoT Core, Azure IoT Hub, digital twins, device identity, telemetry routing and cloud APIs.</p>
-            <span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">IoT</span>
-          </div>
-          <div class="card">
-            <h3>Industrial Connectivity</h3>
-            <p>Modbus, OPC UA, LoRaWAN, MQTT, field gateways, and edge processing for industrial systems.</p>
-            <span class="tag">OPC UA</span><span class="tag">MQTT</span><span class="tag">LoRaWAN</span>
-          </div>
-          <div class="card">
-            <h3>Edge & Embedded</h3>
-            <p>ESP32, Raspberry Pi, Linux-based systems, data acquisition, and platform integration at the edge.</p>
-            <span class="tag">ESP32</span><span class="tag">Linux</span><span class="tag">Edge</span>
-          </div>
-          <div class="card">
-            <h3>Blender & 3D</h3>
-            <p>Asset modeling, object mapping, and interactive scene design for a digital twin experience.</p>
-            <span class="tag">Blender</span><span class="tag">3D</span><span class="tag">Scene</span>
-          </div>
-          <div class="card">
-            <h3>Data & Analytics</h3>
-            <p>Telemetry validation, trend analysis, time-series data, and operational monitoring for plant systems.</p>
-            <span class="tag">Python</span><span class="tag">Analytics</span><span class="tag">ML</span>
-          </div>
-          <div class="card">
-            <h3>System Design</h3>
-            <p>End-to-end architecture from sensor acquisition to cloud services and user-facing operational views.</p>
-            <span class="tag">Architecture</span><span class="tag">Design</span><span class="tag">Ops</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="container">
-        <div class="eyebrow">03 / Project focus</div>
-        <h2>Digital twin concepts and industrial IoT workflows.</h2>
-        <p class="lead">
-          Selected project themes that connect process instrumentation, remote monitoring,
-          and 3D visualization into a usable engineering story.
-        </p>
-        <div class="grid">
-          <div class="card project-card">
-            <h3>Sensor to Blender</h3>
-            <p>Model a plant with live tank, pump, and valve states visualized from telemetry data.</p>
-            <span class="tag">Blender</span><span class="tag">Digital twin</span>
-            <a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View project ↗</a>
-          </div>
-          <div class="card project-card">
-            <h3>Plant Telemetry</h3>
-            <p>Collect industrial readings from field devices and route them into a validated data pipeline.</p>
-            <span class="tag">MQTT</span><span class="tag">Telemetry</span>
-            <a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View project ↗</a>
-          </div>
-          <div class="card project-card">
-            <h3>Edge Gateway</h3>
-            <p>Connect sensor protocols, normalize device data, and package it for cloud or local visualization.</p>
-            <span class="tag">Edge</span><span class="tag">Gateway</span>
-            <a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View project ↗</a>
-          </div>
-          <div class="card project-card">
-            <h3>Ops Dashboard</h3>
-            <p>Surface live machine state, last-update timestamps, alarms, and quality indicators for operators.</p>
-            <span class="tag">Dashboards</span><span class="tag">Monitoring</span>
-            <a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View project ↗</a>
-          </div>
-          <div class="card project-card">
-            <h3>Azure & AWS Integration</h3>
-            <p>Design secure, scalable IoT integrations across cloud-native device provisioning and data services.</p>
-            <span class="tag">AWS</span><span class="tag">Azure</span>
-            <a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View project ↗</a>
-          </div>
-          <div class="card project-card">
-            <h3>Industrial Automation</h3>
-            <p>Combine PLC, OPC UA, MQTT, and asset health signals into a model that operators can understand.</p>
-            <span class="tag">Industrial</span><span class="tag">Automation</span>
-            <a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View project ↗</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="architecture">
-      <div class="container">
-        <div class="eyebrow">04 / Architecture</div>
-        <h2>Built in layers, from field data to 3D awareness.</h2>
-        <div class="arch-blocks">
-          <div class="arch-step"><span>01</span><h3>Measure</h3><p>Sensor, PLC, simulator, or edge device generates real-world values.</p></div>
-          <div class="arch-step"><span>02</span><h3>Acquire</h3><p>MQTT, Modbus, OPC UA, and edge processing normalize the signal.</p></div>
-          <div class="arch-step"><span>03</span><h3>Model</h3><p>Backend validates telemetry and binds values to named asset objects.</p></div>
-          <div class="arch-step"><span>04</span><h3>Visualize</h3><p>Blender and web tooling convert asset state into a live digital-twin view.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="feature-band">
-      <div class="container feature-strip">
-        <div class="feature-item"><strong>MQTT</strong><span>Data routing</span></div>
-        <div class="feature-item"><strong>OPC UA</strong><span>Industrial interfaces</span></div>
-        <div class="feature-item"><strong>AWS / Azure</strong><span>Cloud integration</span></div>
-        <div class="feature-item"><strong>Blender</strong><span>3D model views</span></div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container contact-box">
-        <div class="eyebrow">05 / Contact</div>
-        <h2>Let’s build connected systems worth seeing.</h2>
-        <p class="lead">
-          I’m open to project discussions around industrial IoT, smart monitoring,
-          digital twin design, cloud connectivity, and edge-to-3D visualization.
-        </p>
-        <div class="buttons">
-          <a class="btn primary" href="mailto:venkateshbokka232@gmail.com">Email me</a>
-          <a class="btn" href="https://github.com/venkateshbokka" target="_blank">GitHub ↗</a>
-          <a class="btn" href="https://www.linkedin.com/in/venkatesh-bokka-983b99126/" target="_blank">LinkedIn ↗</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-inner">
-      <span>© {new Date().getFullYear()} Venkatesh Bokka</span>
-      <span>Built for connected systems.</span>
-    </div>
-  </footer>
+<section id="contact"><div class="container">
+  <div class="eyebrow">05 / Contact</div><h2>Let's build something connected.</h2>
+  <p class="lead">For IoT engineering, cloud, edge or industrial connectivity opportunities, reach out through GitHub or LinkedIn.</p>
+  <div class="buttons">
+    <a class="btn primary" href="mailto:venkateshbokka232@gmail.com">Email me</a>
+    <a class="btn" href="https://github.com/venkateshbokka" target="_blank">GitHub ↗</a>
+    <a class="btn" href="https://www.linkedin.com/in/venkatesh-bokka-983b99126/" target="_blank">LinkedIn ↗</a>
+  </div>
+</div></section>
+</main>
+<footer><div class="container"><span>© {new Date().getFullYear()} Venkatesh Bokka</span><span>Built for IoT engineering.</span></div></footer>
 </Layout>
