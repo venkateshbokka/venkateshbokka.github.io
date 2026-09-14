@@ -35,26 +35,27 @@ import Layout from "../layouts/Layout.astro";
 </div></section>
 
 <section id="projects"><div class="container">
-  <div class="eyebrow">03 / Selected work</div><h2>Projects &amp; labs.</h2>
+  <div class="eyebrow">03 / Open-source work</div><h2>From architecture to implementation.</h2>
+  <p class="lead">Open-source projects that make the design decisions visible: system boundaries, device flows, cloud services and working code.</p>
   <div class="grid">
-    <div class="card"><h3>AWS IoT Platform</h3><p>Device connectivity, MQTT telemetry, Thing Registry, policies, provisioning and cloud data pipelines.</p></div>
-    <div class="card"><h3>ESP32 IoT Gateway</h3><p>Embedded gateway experiments connecting sensors and field devices to modern IoT backends.</p></div>
-    <div class="card"><h3>Industrial Edge</h3><p>Edge-first architectures using Linux, Python and Node-RED for protocol integration and local processing.</p></div>
+    <div class="card"><h3>AWS IoT Platform</h3><p>Device connectivity, MQTT telemetry, Thing Registry, policies, provisioning and cloud data pipelines.</p><span class="tag">Open source</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
+    <div class="card"><h3>ESP32 IoT Gateway</h3><p>Embedded gateway experiments connecting sensors and field devices to modern IoT backends.</p><span class="tag">Embedded</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
+    <div class="card"><h3>Industrial Edge</h3><p>Edge-first architectures using Linux, Python and Node-RED for protocol integration and local processing.</p><span class="tag">IIoT</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
   </div>
 </div></section>
 
 <section id="architecture"><div class="container">
-  <div class="eyebrow">04 / Architecture</div><h2>Device → Edge → Cloud → Data</h2>
-  <p class="lead">A representative architecture for scalable telemetry systems.</p>
+  <div class="eyebrow">04 / Architecture to implementation</div><h2>Designed in layers. Delivered in code.</h2>
+  <p class="lead">Each project moves from a clear architecture to testable implementation: define the flow, choose the protocol, build the edge path, connect the cloud and document the result.</p>
   <div class="arch">
-    <div class="node">Sensors<br/>ESP32 / PLC</div><div class="arrow">→</div>
-    <div class="node">Edge<br/>Python / Node-RED</div><div class="arrow">→</div>
-    <div class="node">AWS IoT Core<br/>MQTT</div>
+    <div class="node">1. Architecture<br/>Sensors / PLC</div><div class="arrow">→</div>
+    <div class="node">2. Implementation<br/>ESP32 / Python</div><div class="arrow">→</div>
+    <div class="node">3. Connectivity<br/>MQTT / REST</div>
   </div>
   <div class="arch">
-    <div class="node">Rules / Lambda</div><div class="arrow">→</div>
-    <div class="node">S3 / DynamoDB<br/>Timestream</div><div class="arrow">→</div>
-    <div class="node">Analytics / APIs</div>
+    <div class="node">4. Cloud<br/>IoT Core / Lambda</div><div class="arrow">→</div>
+    <div class="node">5. Data<br/>S3 / DynamoDB</div><div class="arrow">→</div>
+    <div class="node">6. Proof<br/>Tests / Docs / Demo</div>
   </div>
 </div></section>
 
