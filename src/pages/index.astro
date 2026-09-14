@@ -29,6 +29,7 @@ import Layout from "../layouts/Layout.astro";
   <div class="eyebrow">02 / Technical focus</div><h2>Tools I build with.</h2>
   <div class="grid">
     <div class="card"><h3>Cloud &amp; IoT</h3><p>AWS IoT Core, Azure IoT Hub, AWS IoT TwinMaker, Azure Digital Twins, The Things Stack, ChirpStack, Lambda and Azure Functions.</p><span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">Digital twins</span></div>
+    <div class="card"><h3>Device Provisioning</h3><p>AWS Fleet Provisioning and claim certificates, Azure DPS with X.509 or symmetric keys, and The Things Stack LoRaWAN OTAA onboarding.</p><span class="tag">Identity</span><span class="tag">Certificates</span><span class="tag">OTAA</span></div>
     <div class="card"><h3>Edge &amp; Embedded</h3><p>ESP32, Raspberry Pi, Arduino, BeagleBone and Linux-based edge systems.</p><span class="tag">ESP32</span><span class="tag">Linux</span><span class="tag">Edge</span></div>
     <div class="card"><h3>Industrial IoT</h3><p>PLC and OPC UA data acquisition with Ignition, Modbus, Mosquitto, Kafka, gateways, telemetry pipelines and device integration.</p><span class="tag">Ignition</span><span class="tag">OPC UA</span><span class="tag">IIoT</span></div>
   </div>
@@ -38,13 +39,13 @@ import Layout from "../layouts/Layout.astro";
   <div class="eyebrow">03 / Open-source work</div><h2>From architecture to implementation.</h2>
   <p class="lead">Open-source projects that make the design decisions visible: system boundaries, device flows, cloud services and working code.</p>
   <div class="grid">
-    <div class="card"><h3>AWS IoT Platform</h3><p>Device connectivity, MQTT telemetry, Thing Registry, policies, provisioning and cloud data pipelines.</p><span class="tag">Open source</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
-    <div class="card"><h3>Azure IoT Platform</h3><p>IoT Hub device management, secure telemetry, device twins, routing and cloud data workflows with Azure services.</p><span class="tag">Open source</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
+    <div class="card"><h3>AWS IoT Platform</h3><p>Device connectivity with Fleet Provisioning, claim certificates, JITP/JITR registration, policies, MQTT telemetry and cloud data pipelines.</p><span class="tag">Provisioning</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
+    <div class="card"><h3>Azure IoT Platform</h3><p>IoT Hub onboarding through Device Provisioning Service using X.509, symmetric-key or TPM attestation, device twins and routing.</p><span class="tag">DPS</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
     <div class="card"><h3>Digital Twins &amp; 3D</h3><p>Blender-based 3D visualization connected to AWS IoT TwinMaker and Azure Digital Twins for spatial and operational context.</p><span class="tag">Blender</span><span class="tag">3D</span><span class="tag">TwinMaker</span></div>
     <div class="card"><h3>AWS IoT TwinMaker</h3><p>Digital-twin scenes that combine IoT telemetry, equipment relationships and 3D operational context for connected assets.</p><span class="tag">Digital twin</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
     <div class="card"><h3>Azure Digital Twins</h3><p>Model-driven digital twins using Azure Digital Twins, relationships, live property updates and connected-space graphs.</p><span class="tag">Digital twin</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
     <div class="card"><h3>Blender Twin Visualization</h3><p>3D asset and scene workflows in Blender for visualizing devices, facilities and telemetry-driven digital-twin states.</p><span class="tag">Blender</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
-    <div class="card"><h3>The Things Stack</h3><p>LoRaWAN network-server integrations for gateways, end devices, uplinks, downlinks and application data.</p><span class="tag">LoRaWAN</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
+    <div class="card"><h3>The Things Stack</h3><p>LoRaWAN device provisioning with OTAA join credentials, Join Server integration, DevEUI, JoinEUI, AppKey and application data.</p><span class="tag">OTAA</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
     <div class="card"><h3>ChirpStack</h3><p>Open-source LoRaWAN deployments with device provisioning, MQTT integration, payload handling and monitoring.</p><span class="tag">Open source</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
     <div class="card"><h3>Mosquitto Broker</h3><p>Lightweight open-source MQTT messaging for local development, edge gateways, device testing and telemetry routing.</p><span class="tag">MQTT</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
     <div class="card"><h3>Kafka Event Streaming</h3><p>Durable event streaming for high-volume telemetry, consumer services, integrations and real-time processing.</p><span class="tag">Streaming</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
@@ -71,6 +72,11 @@ import Layout from "../layouts/Layout.astro";
     <div class="node">PLC / OPC UA<br/>Industrial data</div><div class="arrow">→</div>
     <div class="node">Ignition<br/>SCADA / tags</div><div class="arrow">→</div>
     <div class="node">Cloud / database<br/>ML / dashboard</div>
+  </div>
+  <div class="arch">
+    <div class="node">AWS IoT<br/>Fleet / JITP / JITR</div><div class="arrow">→</div>
+    <div class="node">Azure DPS<br/>X.509 / key / TPM</div><div class="arrow">→</div>
+    <div class="node">The Things Stack<br/>LoRaWAN OTAA</div>
   </div>
 </div></section>
 
