@@ -30,7 +30,7 @@ import Layout from "../layouts/Layout.astro";
   <div class="grid">
     <div class="card"><h3>Cloud &amp; IoT</h3><p>AWS IoT Core, Azure IoT Hub, The Things Stack, ChirpStack, Lambda, Azure Functions, S3, Blob Storage and MQTT.</p><span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">LoRaWAN</span></div>
     <div class="card"><h3>Edge &amp; Embedded</h3><p>ESP32, Raspberry Pi, Arduino, BeagleBone and Linux-based edge systems.</p><span class="tag">ESP32</span><span class="tag">Linux</span><span class="tag">Edge</span></div>
-    <div class="card"><h3>Industrial IoT</h3><p>Node-RED, Modbus, OPC UA concepts, gateways, telemetry pipelines and device integration.</p><span class="tag">Node-RED</span><span class="tag">Modbus</span><span class="tag">IIoT</span></div>
+    <div class="card"><h3>Industrial IoT</h3><p>Node-RED, Modbus, OPC UA concepts, Mosquitto, Kafka, gateways, telemetry pipelines and device integration.</p><span class="tag">Mosquitto</span><span class="tag">Kafka</span><span class="tag">IIoT</span></div>
   </div>
 </div></section>
 
@@ -42,6 +42,8 @@ import Layout from "../layouts/Layout.astro";
     <div class="card"><h3>Azure IoT Platform</h3><p>IoT Hub device management, secure telemetry, device twins, routing and cloud data workflows with Azure services.</p><span class="tag">Open source</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
     <div class="card"><h3>The Things Stack</h3><p>LoRaWAN network-server integrations for gateways, end devices, uplinks, downlinks and application data.</p><span class="tag">LoRaWAN</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
     <div class="card"><h3>ChirpStack</h3><p>Open-source LoRaWAN deployments with device provisioning, MQTT integration, payload handling and monitoring.</p><span class="tag">Open source</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
+    <div class="card"><h3>Mosquitto Broker</h3><p>Lightweight open-source MQTT messaging for local development, edge gateways, device testing and telemetry routing.</p><span class="tag">MQTT</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
+    <div class="card"><h3>Kafka Event Streaming</h3><p>Durable event streaming for high-volume telemetry, consumer services, integrations and real-time processing.</p><span class="tag">Streaming</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
     <div class="card"><h3>ESP32 IoT Gateway</h3><p>Embedded gateway experiments connecting sensors and field devices to modern IoT backends.</p><span class="tag">Embedded</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
     <div class="card"><h3>Industrial Edge</h3><p>Edge-first architectures using Linux, Python and Node-RED for protocol integration and local processing.</p><span class="tag">IIoT</span><a class="card-link" href="https://github.com/venkateshbokka" target="_blank">View repositories ↗</a></div>
   </div>
@@ -53,11 +55,11 @@ import Layout from "../layouts/Layout.astro";
   <div class="arch">
     <div class="node">1. Architecture<br/>Sensors / PLC</div><div class="arrow">→</div>
     <div class="node">2. Implementation<br/>ESP32 / Python</div><div class="arrow">→</div>
-    <div class="node">3. Connectivity<br/>LoRaWAN / MQTT / REST</div>
+    <div class="node">3. Connectivity<br/>LoRaWAN / Mosquitto / REST</div>
   </div>
   <div class="arch">
     <div class="node">4. Cloud<br/>AWS / Azure / LoRaWAN</div><div class="arrow">→</div>
-    <div class="node">5. Data<br/>S3 / Blob / DynamoDB</div><div class="arrow">→</div>
+    <div class="node">5. Events &amp; Data<br/>Kafka / S3 / Blob</div><div class="arrow">→</div>
     <div class="node">6. Proof<br/>Tests / Docs / Demo</div>
   </div>
 </div></section>
