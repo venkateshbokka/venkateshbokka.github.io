@@ -54,17 +54,27 @@ import Layout from "../layouts/Layout.astro";
 </div></section>
 
 <section id="architecture"><div class="container">
-  <div class="eyebrow">04 / Architecture</div><h2>Device → Edge → Cloud → Data</h2>
-  <p class="lead">A representative architecture for scalable telemetry systems.</p>
+  <div class="eyebrow">04 / Architecture</div><h2>Provision → Connect → Stream → Understand</h2>
+  <p class="lead">A project-aligned architecture for secure devices, industrial data and operational insight.</p>
   <div class="arch">
-    <div class="node">Sensors<br/>ESP32 / PLC</div><div class="arrow">→</div>
-    <div class="node">Edge<br/>Python / Node-RED</div><div class="arrow">→</div>
-    <div class="node">AWS IoT Core<br/>MQTT</div>
+    <div class="node">Provision<br/>AWS Fleet / Azure DPS</div><div class="arrow">→</div>
+    <div class="node">Identity<br/>X.509 / JITP / OTAA</div><div class="arrow">→</div>
+    <div class="node">Device registry<br/>Secure onboarding</div>
   </div>
   <div class="arch">
-    <div class="node">Rules / Lambda</div><div class="arrow">→</div>
-    <div class="node">S3 / DynamoDB<br/>Timestream</div><div class="arrow">→</div>
-    <div class="node">Analytics / APIs</div>
+    <div class="node">Sensors<br/>ESP32 / PLC</div><div class="arrow">→</div>
+    <div class="node">Custom Linux<br/>Ignition / OPC UA</div><div class="arrow">→</div>
+    <div class="node">Mosquitto / MQTT<br/>The Things Stack</div>
+  </div>
+  <div class="arch">
+    <div class="node">AWS IoT<br/>Azure IoT</div><div class="arrow">→</div>
+    <div class="node">Kafka<br/>Event streaming</div><div class="arrow">→</div>
+    <div class="node">Databricks<br/>Lakehouse analytics</div>
+  </div>
+  <div class="arch">
+    <div class="node">Telemetry<br/>Device state</div><div class="arrow">→</div>
+    <div class="node">Digital Twin<br/>3D context</div><div class="arrow">→</div>
+    <div class="node">Operations<br/>Dashboards / APIs</div>
   </div>
 </div></section>
 
